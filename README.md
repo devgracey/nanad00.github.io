@@ -1,1 +1,0 @@
-# nanad00.github.io
