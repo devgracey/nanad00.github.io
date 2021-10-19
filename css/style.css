@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+:root{   /* global css variables */
+    --fcolor: rgb(253, 253, 253); 
+    --padding: 10px;
+    --margin: 10px;
+    --backgroundc: #292c35;
+    --font-white: #ffff;
+    --fsize: 1rem;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --iconcolor: #777777;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: var(--backgroundc); */
+    background-color: #EEEEEE;
+}
+/* .container :is( .board2){
+    height: 850px;
+}
+.board2{
+    position: relative;
+    top: 0;
+} */
+.board1{
+    height: 900px;
+}
+
+/* navigation bar */
+.container nav{
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--backgroundc);
+}
+
+/* contact button */
+.container nav a{
+    color: var(--fcolor);
+    text-decoration: none;
+    font-size: var(--fsize);
+    font-family: "Roboto", serif;
+    padding-right: 1rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+/* first container styling */
+/* .container .board1{
+    background-color: rgba(255, 255, 255, 0.233);
+} */
+
+/* profile section styling */
+.profile-section{
+    height: 200px;
+    padding: 2.5rem 0 0 3rem;
+}
+/* wrapper styling */
+.wrapper{
+    height: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* profile picture styling START*/
+.wrapper img{
+    height: 160px;
+    border-radius: 50%;
+    animation: imganimation 1.5s linear both;
+}
+@keyframes imganimation {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/* profile picture styling END*/
+.social{
+    padding-left: 2rem;
+}
+.mailto p{
+    margin: 0;
+}
+.social h3{
+    width:100%;
+}
+/* social icons styling */
+.social h3 a, .social h3 span {
+    color: var(--iconcolor);
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+ /* social icons animation START*/
+.social h3 a:nth-child(1){
+    animation: iconanimation 1s linear 0.5s both;
+}
+.social h3 a:nth-child(2){
+    animation: iconanimation 1s linear 1s both;
+}
+.social h3 a:nth-child(3){
+    animation: iconanimation 1s linear 1.5s both;
+}
+.social h3 a:nth-child(4){
+    animation: iconanimation 1s linear 2s both ;
+}
+.social h3 span{
+    animation: iconanimation 1s linear 2.5s both;
+}
+@keyframes iconanimation {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+ /* social icons animation END */
+
+.mailto{
+    text-decoration: none;
+}
+/* hover on icons style */
+.social h3 a:hover, span:hover, .fa-envelope:hover{
+    cursor: pointer;
+    color: #222222;
+}
+.social h1{
+    font-size: 7vmin;
+    margin: 0;
+    font-family: 'Lora', serif;;
+    letter-spacing: 2px;
+    color: #222222;
+    animation: imganimation 1.5s linear both;
+}
+
+/* about section styling */
+.about-section{
+    height: 800px;
+    background-color: var(--backgroundc);
+}
+/* .about-section h1 span{
+    color: #d4d1d1;
+    align-items: center;
+    padding-left: 5rem;
+    font-size: 1.7rem;
+} */
+/* .about-section h1 span:nth-child(2){
+    padding-left: 25.5rem;
+} */
+.about-wrapper{
+    height: 500px;
+    display: flex;
+}
+.about-wrapper :is(.personal-section, .projects-section){
+    flex: 1;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    padding: 0 1rem;
+}
+.aboutme-holder{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    overflow: hidden;
+}
+.personal-section h2{
+    margin: 1.5rem 0 0 0;
+    font-family: var(--font-oxygen);
+    color: silver;
+    padding-left: 2rem;
+}
+.aboutme-holder img{
+    height: 200px;
+    border-radius: 50%!important;
+    align-self: center;
+    padding: 0 2rem;
+}
+.personal-section p{
+    flex: 1;
+}
+.about p{
+    font-size: 1.2rem;
+    color: #BBBBBB;
+    line-height: 1.4;
+}
+.about p:nth-child(1){
+    margin-top: 3rem;
+}
+
+
+/* projects section styling */
+.projects-section,.slideshow-container,.img-model{
+    margin: 0;
+    padding: 0;
+}
+.projects-section h2{
+    font-family: var(--font-oxygen);
+    color: silver;
+    margin-bottom: 2rem;
+}
+.img-model img{
+    border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: 300px;
+    padding: 0;
+  }
+  
+  /* Next & previous buttons */
+  /* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  } */
+  
+  /* Position the "next button" to the right */
+  /* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /* .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+   */
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    overflow-y: scroll;
+  }
+.text{
+    overflow: auto;
+}
+.text::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+}
+.text.scroll::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgb(253, 14, 14); 
+    border-radius: 10px;
+    background-color: black ;
+}
+.text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ecececc5; 
+}
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 1rem;
+    background-color: var(--backgroundc);
+    margin: 0 2px;
+    border-bottom: 5px solid #777777;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: var(--backgroundc);
+    border-bottom: 5px solid #d4d1d1;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s linear;
+  }
+  .slider-wrap{
+      height: 300px;
+      display: flex;
+  }
+  .text p{  
+      padding: var(--padding);
+      margin: 0;
+      font-size: 1.2rem;
+      color: #BBBBBB;
+      padding: 0 2rem;
+      line-height: 1.5;
+  }
+  .text h3{
+      margin: auto;
+      display: block;
+      text-align: center;
+  }
+  .bar{
+      width: 200px;
+      margin: 0 auto;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /*footer styling START*/
+footer{
+    height: 10rem;
+    background-color: #222222;
+    display: flex;
+    padding: 2rem;
+    margin: 0;
+}
+.social-foot, .copyright-foot{
+    flex: 1;
+}
+.copyright-foot{
+    text-align: end;
+}
+.social-foot h5{
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    color: #EEEEEE;
+}
+.social-foot h6{
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #CCCCCC;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+.social-foot span a{
+    text-decoration: none;
+    color: #CCCCCC;
+    padding-right: 1rem;
+}
+.copyright-foot h6{
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    color: #CCCCCC;
+}
+.copyright-foot h6:nth-child(2){
+    font-weight: 500;
+    color: #EEEEEE;
+}
+/*footer styling END*/
+
+@media only screen and (max-width: 975px){
+    .img-model, .aboutme-holder img{
+        display: none;
+    }
+    .about{
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width: 750px){
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .wrapper img{
+        height: 6rem;
+    }
+    .social h1{
+        margin-top: 10px;
+        font-size: 5vmin;
+        text-align: center;
+    }
+    .social h3 span a{
+        font-size: 1.2rem;
+    }
+    .profile-section{
+        padding: 1rem 0 1rem 1rem;
+    }
+    .about-section{
+        height: 1100px;
+    }
+    .about{
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .board1{
+        height: 1300px;
+    }
+}
+@media only screen and (max-width: 680px){
+    .social h3 span a{
+        display: none;
+    }
+    .container nav a{
+        font-size: 0.9rem;
+    }
+    .about-section{
+        height: 1400px;
+    }
+    .board1{
+        height: 1500px;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    footer{
+        flex-direction: column;
+        height: 13rem;
+    }
+    .social-foot{
+        margin-bottom: 1rem;
+    }
+    .copyright-foot h6{
+        text-align: left;
+    }
+    .social h3 a{
+        padding-right: 1rem;
+    }
+    .social{
+        padding-left: 0;
+    }
+    .board1{
+        height: 1400px;
+    }
+    .container nav a{
+        display: none;
+    }
+    .social h1{
+        font-size: 6vmin;
+    }
+  }
+
+@media only screen and (max-width: 381px){
+    footer{
+        height: 18rem;
+    }
+    .social h1{
+        font-size: 6vmin;
+    }
+    .social h3{
+        font-size: 0.7rem;
+    }
+}
