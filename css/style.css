@@ -78,7 +78,7 @@ body{
 .wrapper img{
     height: 160px;
     border-radius: 50%;
-    animation: imganimation 1.5s linear both;
+    animation: imganimation 1.5s linear both;fa
 }
 @keyframes imganimation {
     0%{
@@ -341,12 +341,15 @@ body{
   }
 
   /*footer styling START*/
+
+/*bug in footer desktop view in mobile*/
 footer{
     height: 10rem;
     background-color: #222222;
     display: flex;
     padding: 2rem;
     margin: 0;
+    
 }
 .social-foot, .copyright-foot{
     flex: 1;
